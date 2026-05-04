@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boda - Joan & Alexia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fdf6f9;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1520854221256-17451cc331bf') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .love-text {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .bible {
+      margin-top: 30px;
+      font-style: italic;
+      color: #7a4e5d;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      height: 250px;
+    }
+
+    .details {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      padding: 30px;
+      background: #f3e4ea;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+      header p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joan & Alexia</h1>
+    <p>Nos casamos</p>
+    <p>10 de Octubre 2026</p>
+  </header>
+
+  <section>
+    <div class="love-text">
+      <p>
+        Con mucha alegría queremos invitarte a compartir uno de los momentos más importantes de nuestras vidas.
+        Acompañanos a celebrar nuestro amor, en un día lleno de emociones, sonrisas y recuerdos inolvidables.
+      </p>
+
+      <p class="bible">
+        "El amor es paciente, es bondadoso. El amor no es envidioso ni jactancioso ni orgulloso.
+        Todo lo disculpa, todo lo cree, todo lo espera, todo lo soporta."<br>
+        - 1 Corintios 13:4-7
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="font-family: 'Great Vibes', cursive; font-size: 2.5rem;">Momentos</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="foto boda">
+      <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" alt="foto boda">
+      <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486" alt="foto boda">
+      <img src="https://images.unsplash.com/photo-1529634892275-1c0a0f4f0c7b" alt="foto boda">
+    </div>
+  </section>
+
+  <section>
+    <div class="details">
+      <h2 style="font-family: 'Great Vibes', cursive; font-size: 2rem;">Detalles</h2>
+      <p><strong>Fecha:</strong> 10 de Octubre 2026</p>
+      <p><strong>Hora:</strong> 20:00 hs</p>
+      <p><strong>Lugar:</strong> Salón a confirmar</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Con amor, Joan & Alexia 💕</p>
+  </footer>
+
+</body>
+</html>
