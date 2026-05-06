@@ -1,0 +1,304 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff8dc;
+  color: #444;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(rgba(255,248,220,0.9), rgba(255,248,220,0.9)),
+    url('https://images.unsplash.com/photo-1522673607200-164d1b6ce486') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* CONTENIDO OVERLAY */
+.overlay-content {
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+  backdrop-filter: blur(8px);
+  padding: 30px;
+}
+
+/* TEXTOS */
+.intro {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4.5rem;
+  margin: 10px 0;
+  color: #d4af37;
+}
+
+.date {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.frase {
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* BOTON PREMIUM */
+.btn-open {
+  padding: 18px 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ffd700, #f7c948);
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-open:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.btn-open::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  transition: 0.6s;
+}
+
+.btn-open:hover::after {
+  left: 100%;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              url('Boda2.jpeg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+}
+
+/* SECCIONES */
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #d4af37;
+  margin-bottom: 30px;
+}
+
+/* TEXTO INVITACION */
+.invitation-text {
+  max-width: 700px;
+  margin: auto;
+  color: #000;
+}
+
+.invitation-text p {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+/* VERSICULO */
+.bible-verse {
+  max-width: 700px;
+  margin: auto;
+  color: #000;
+}
+
+.verse {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  font-style: italic;
+}
+
+.verse-ref {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* CONTADOR */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  min-width: 90px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(212,175,55,0.15);
+  border-bottom: 3px solid #d4af37;
+}
+
+.box span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* GALERIA */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 11000;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 85%;
+  border: 8px solid white;
+  border-radius: 4px;
+}
+
+/* BOTON MUSICA */
+.music-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #d4af37;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: 1.2rem;
+}
+
+/* ANIMACIONES */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* KEYFRAMES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .names {
+    font-size: 3rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .btn-open {
+    padding: 16px 35px;
+    font-size: 0.9rem;
+  }
+
+  .invitation-text p,
+  .verse {
+    font-size: 1.1rem;
+  }
+
+  .gallery img {
+    height: 250px;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+}
